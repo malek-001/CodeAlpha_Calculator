@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - CodeAlpha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pageWrapper">
+        <div class="calculatorContainer">
+            <div class="calculatorHeader">
+                <span class="brandName">Malek</span>
+                <span class="calculationHistory" id="calculationHistory"></span>
+            </div>
+
+            <input type="text" id="mainDisplayScreen" placeholder="0" readonly>
+
+            <div class="buttonGrid">
+                <button class="button clearButton" onclick="clearDisplayScreen()">AC</button>
+                <button class="button deleteButton" onclick="deleteLastCharacter()">DEL</button>
+                <button class="button operatorButton" onclick="appendToDisplay('%')">%</button>
+                <button class="button operatorButton" onclick="appendToDisplay('/')">÷</button>
+
+                <button class="button numberButton" onclick="appendToDisplay('7')">7</button>
+                <button class="button numberButton" onclick="appendToDisplay('8')">8</button>
+                <button class="button numberButton" onclick="appendToDisplay('9')">9</button>
+                <button class="button operatorButton" onclick="appendToDisplay('*')">×</button>
+
+                <button class="button numberButton" onclick="appendToDisplay('4')">4</button>
+                <button class="button numberButton" onclick="appendToDisplay('5')">5</button>
+                <button class="button numberButton" onclick="appendToDisplay('6')">6</button>
+                <button class="button operatorButton" onclick="appendToDisplay('-')">−</button>
+
+                <button class="button numberButton" onclick="appendToDisplay('1')">1</button>
+                <button class="button numberButton" onclick="appendToDisplay('2')">2</button>
+                <button class="button numberButton" onclick="appendToDisplay('3')">3</button>
+                <button class="button operatorButton" onclick="appendToDisplay('+')">+</button>
+
+                <button class="button numberButton zeroButton" onclick="appendToDisplay('0')">0</button>
+                <button class="button numberButton" onclick="appendToDisplay('.')">.</button>
+                <button class="button equalsButton" onclick="calculateFinalResult()">=</button>
+            </div>
+        </div>
+    <p class="developerName">Developed By Muhib<span class="heart">❤️</span></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
